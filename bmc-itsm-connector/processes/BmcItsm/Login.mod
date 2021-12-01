@@ -34,8 +34,8 @@ Ct0 f3 path /jwt/login #txt
 Ct0 f3 method POST #txt
 Ct0 f3 bodyInputType FORM #txt
 Ct0 f3 bodyMediaType application/x-www-form-urlencoded #txt
-Ct0 f3 bodyForm 'username="Allen";
-password="Password_1234";
+Ct0 f3 bodyForm 'username=ivy.var.bmc-itsm-connector_Username;
+password=ivy.var.bmc-itsm-connector_Password;
 authString="authenticationString";
 ' #txt
 Ct0 f3 resultType java.lang.String #txt
