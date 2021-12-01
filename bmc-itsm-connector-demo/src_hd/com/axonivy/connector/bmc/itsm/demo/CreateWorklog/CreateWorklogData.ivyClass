@@ -1,0 +1,4 @@
+CreateWorklogData #class
+com.axonivy.connector.bmc.itsm.demo.CreateWorklog #namespace
+worklog com.axonivy.connector.bmc.itsm.models.WorkLog #field
+worklog PERSISTENT #fieldModifier

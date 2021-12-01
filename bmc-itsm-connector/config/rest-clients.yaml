@@ -1,0 +1,8 @@
+RestClients:
+  BMC_ITSM:
+    UUID: 5c4bd588-2458-46de-ab54-de103da7c051
+    Url: ${ivy.var.bmc-itsm-connector.Url}
+    Icon: res:/webContent/icons/bmc-remedy.png
+    Features:
+    - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
+    - com.axonivy.connector.bmc.itsm.auth.BearerFeature

@@ -1,0 +1,13 @@
+Variables:
+
+  bmc-itsm-connector:
+
+    # Url to BMC ITSM server
+    Url: ""
+
+    # Username to connect to the BMC ITSM server
+    Username: ""
+
+    # Password to connect to the BMC ITSM server
+    # [password]
+    Password: ""

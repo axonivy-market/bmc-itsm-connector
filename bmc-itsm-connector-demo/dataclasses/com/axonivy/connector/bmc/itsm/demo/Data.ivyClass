@@ -1,0 +1,16 @@
+Data #class
+com.axonivy.connector.bmc.itsm.demo #namespace
+bearerToken String #field
+bearerToken PERSISTENT #fieldModifier
+incidentNumber String #field
+incidentNumber PERSISTENT #fieldModifier
+workLogId String #field
+workLogId PERSISTENT #fieldModifier
+incident com.axonivy.connector.bmc.itsm.models.Incident #field
+incident PERSISTENT #fieldModifier
+incidents java.util.List<com.axonivy.connector.bmc.itsm.models.Incident> #field
+incidents PERSISTENT #fieldModifier
+worklog com.axonivy.connector.bmc.itsm.models.WorkLog #field
+worklog PERSISTENT #fieldModifier
+worklogs java.util.List<com.axonivy.connector.bmc.itsm.models.WorkLog> #field
+worklogs PERSISTENT #fieldModifier

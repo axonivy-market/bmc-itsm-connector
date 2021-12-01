@@ -1,0 +1,4 @@
+ShowWorklogData #class
+com.axonivy.connector.bmc.itsm.demo.ShowWorklog #namespace
+worklog com.axonivy.connector.bmc.itsm.models.WorkLog #field
+worklog PERSISTENT #fieldModifier

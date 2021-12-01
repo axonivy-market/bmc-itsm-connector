@@ -1,0 +1,4 @@
+CreateIncidentData #class
+com.axonivy.connector.bmc.itsm.demo.CreateIncident #namespace
+incident com.axonivy.connector.bmc.itsm.models.Incident #field
+incident PERSISTENT #fieldModifier

@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<h:body>
+	<ui:composition template="/layouts/frame-9.xhtml">
+		<ui:define name="title">ShowIncident</ui:define>
+		<ui:define name="content">
+
+			<h3>Show Incident</h3>
+
+			<h:form id="form">
+				<p:messages />
+				<p:panelGrid columns="2" layout="grid"
+					styleClass="ui-panelgrid-blank"
+					columnClasses="ui-g-12 ui-md-3 ui-lg-2, ui-g-12 ui-md-9 ui-lg-4, ui-g-12 ui-md-3 ui-lg-2, ui-g-12 ui-md-9 ui-lg-4">
+
+					<p:outputLabel for="entryId" value="Entry ID" />
+					<p:inputText id="entryId" value="#{data.incident.entryId}"></p:inputText>
+					
+					<p:outputLabel for="incidentNumber" value="Incident Number" />
+					<p:inputText id="incidentNumber" value="#{data.incident.incidentNumber}"></p:inputText>
+
+					<p:outputLabel for="summary" value="Summary" />
+					<p:inputText id="summary" value="#{data.incident.description}"></p:inputText>
+
+					<p:outputLabel for="detailedDescription" value="Description" />
+					<p:inputTextarea id="detailedDescription"
+						value="#{data.incident.detailedDescription}"></p:inputTextarea>
+						
+					<p:outputLabel for="submitter" value="Submitter" />
+					<p:inputText id="submitter" value="#{data.incident.submitter}"></p:inputText>
+
+					<p:outputLabel for="impact" value="Impact" />
+					<p:inputText id="impact" value="#{data.incident.impact}"></p:inputText>
+
+					<p:outputLabel for="urgency" value="Urgency" />
+					<p:inputText id="urgency" value="#{data.incident.urgency}"></p:inputText>
+
+					<p:outputLabel for="status" value="Status" />
+					<p:inputText id="status" value="#{data.incident.status}"></p:inputText>
+
+					<p:outputLabel for="reportedSource" value="Reported Source" />
+					<p:inputText id="reportedSource"
+						value="#{data.incident.reportedSource}"></p:inputText>
+
+					<p:outputLabel for="serviceType" value="Service Type" />
+					<p:inputText id="serviceType" value="#{data.incident.serviceType}"></p:inputText>
+
+				</p:panelGrid>
+				<br />
+				<div class="command-btns">
+					<p:commandLink id="cancel"
+						actionListener="#{ivyWorkflowView.cancel()}" value="Cancel" />
+					<p:commandButton id="proceed" actionListener="#{logic.close}"
+						value="Proceed" update="form" icon="ui-icon-check" />
+				</div>
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+</h:body>
+
+</html>

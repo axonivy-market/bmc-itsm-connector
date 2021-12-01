@@ -1,0 +1,4 @@
+IncidentNumberInputData #class
+com.axonivy.connector.bmc.itsm.demo.IncidentNumberInput #namespace
+incidentNumber String #field
+incidentNumber PERSISTENT #fieldModifier
